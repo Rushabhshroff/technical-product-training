@@ -1,0 +1,34 @@
+{
+  "name": "technical-product-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "amazonproductsearch": "node AmazonProductSearch/runner.js",
+    "browserstackinception": "node BrowserStackInception/runner.js",
+    "percy:prod":"PERCY_BRANCH=master percy exec -- node Percy/index.js",
+    "percy:stage":"PERCY_BRANCH=develop PERCY_TARGET_BRANCH=master percy exec -- node Percy/index.js",
+    "percy":"npm run percy:prod && npm run percy:stage"
+  },
+  "keywords": [],
+  "author": "Rushabh Shroff",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "selenium-webdriver": "^4.0.0-beta.4"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.0.0-beta.58",
+    "@percy/selenium-webdriver": "^1.0.0",
+    "mocha": "^9.0.1"
+  },
+  "percy": {
+    "version": 2,
+    "snapshot": {
+      "widths": [375, 480, 720, 1280, 1440, 1920],
+      "min-height": 1024,
+      "percy-css": "iframe { display: none; }"
+    }
+  }
+}
