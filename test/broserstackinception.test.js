@@ -12,9 +12,6 @@ caps['browserstack-inception'].forEach(async (cap) => {
         it("Perform Sign In", async () => {
             await module.SignIn()
         })
-        it("Select BStack Live", async () => {
-            await module.selectLive()
-        })
         it("Select OS", async () => {
             await module.selectOS()
         })
