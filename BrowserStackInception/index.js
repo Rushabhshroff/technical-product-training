@@ -16,7 +16,7 @@ BrowserStackInception.prototype.SignIn = async function () {
         let cookieNotif = By.id("accept-cookie-notification");
         await this.driver.wait(until.elementLocated(cookieNotif), 2000);
         await this.driver.findElement(cookieNotif).click()
-    } catch { 
+    } catch {
         // No Cookie Popup Nevermind
     }
     let emailInput = By.id("user_email_login");
@@ -37,6 +37,10 @@ BrowserStackInception.prototype.SignIn = async function () {
 }
 BrowserStackInception.prototype.selectOS = async function (os = "win10") {
     await this.sleep(5000)
+    let url = await this.driver.getCurrentUrl();
+    if (!url.includes('live')) {
+        ßthis.driver.get('https://live.browserstack.com')
+    }
     if (os.includes('mac')) {
         let macButton = By.className("os-section__list--mac-icon");
         await this.driver.wait(until.elementLocated(macButton));
@@ -63,6 +67,15 @@ BrowserStackInception.prototype.selectDevice = async function (device = "win10__
 }
 BrowserStackInception.prototype.GoogleSearch = async function () {
     await this.sleep(10000)
+    try{
+        let spotlight = By.className("spotlight__button");
+        await this.driver.wait(until.elementLocated(spotlight),1000);
+        let cord = await this.driver.findElement(spotlight);
+        let loc = await cord.getLocation()
+        await this.driver.actions().move(loc).click().click();
+    }catch{
+        // No spotlight popup nevermind
+    }
     // Chrome Suports Both of them
     if (this.caps.browserName === 'safari') {
         // This works on Safari

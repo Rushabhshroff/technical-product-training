@@ -6,8 +6,12 @@ module.exports = {
             "browser_version": "latest",
             "os": "Windows",
             "os_version": "10",
-            "build": "Amazon Product Search Chrome",
-            "name": "Amazon Product Search Chrome"
+            "project": "Technical Product Training",
+            "build": "Amazon Product Search",
+            "name": "Amazon Product Search Chrome",
+            "debug": true,
+            "console": true,
+            "networkLogs": true
         },
         {
             "browser": "firefox",
@@ -15,8 +19,12 @@ module.exports = {
             "browser_version": "latest",
             "os": "Windows",
             "os_version": "10",
-            "build": "Amazon Product Search Firefox",
-            "name": "Amazon Product Search Firefox"
+            "project": "Technical Product Training",
+            "build": "Amazon Product Search",
+            "name": "Amazon Product Search Firefox",
+            "debug": true,
+            "console": true,
+            "networkLogs": true
         },
         {
             "browser": "safari",
@@ -24,8 +32,12 @@ module.exports = {
             "browser_version": "latest",
             "os": "OS X",
             "os_version": "Big Sur",
-            "build": "Amazon Product Search Safari",
-            "name": "Amazon Product Search Safari"
+            "project": "Technical Product Training",
+            "build": "Amazon Product Search",
+            "name": "Amazon Product Search Safari",
+            "debug": true,
+            "console": true,
+            "networkLogs": true
         }
     ],
     "browserstack-inception": [
@@ -35,9 +47,14 @@ module.exports = {
             "browser_version": "latest",
             "os": "Windows",
             "os_version": "10",
-            "build": "BrowserStack Inception Chrome",
+            "project": "Technical Product Training",
+            "build": "BrowserStack Inception",
             "name": "BrowserStack Inception Chrome",
-            "resolution" : "1920x1080"
+            "resolution": "1920x1080",
+            "maskCommands": "setValues, getValues, setCookies, getCookies",
+            "debug": true,
+            "console": true,
+            "networkLogs": true
         },
         {
             "browser": "firefox",
@@ -45,9 +62,14 @@ module.exports = {
             "browser_version": "latest",
             "os": "Windows",
             "os_version": "10",
-            "build": "BrowserStack Inception Firefox",
+            "project": "Technical Product Training",
+            "build": "BrowserStack Inception",
             "name": "BrowserStack Inception Firefox",
-            "resolution" : "1920x1080"
+            "resolution": "1920x1080",
+            "maskCommands": "setValues, getValues, setCookies, getCookies",
+            "debug": true,
+            "console": true,
+            "networkLogs": true
         },
         {
             "browser": "IE",
@@ -55,10 +77,14 @@ module.exports = {
             "browser_version": "latest",
             "os": "Windows",
             "os_version": "10",
-            "build": "BrowserStack Inception Safari",
-            "name": "BrowserStack Inception Safari",
-            "browserstack.selenium_version" : "3.5.2",
-            "resolution" : "1920x1080"
+            "project": "Technical Product Training",
+            "build": "BrowserStack Inception",
+            "name": "BrowserStack Inception Internet Explorer",
+            "resolution": "1920x1080",
+            "maskCommands": "setValues, getValues, setCookies, getCookies",
+            "debug": true,
+            "console": true,
+            "networkLogs": true
         }
     ]
 }
