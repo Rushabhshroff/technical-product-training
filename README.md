@@ -17,7 +17,7 @@ PERCY_TOKEN= //Your Percy Token
 npm install
 ```
 
-## Unit Tests
+## Run all tests
 
 ```
 npm run test
@@ -27,13 +27,13 @@ npm run test
 
 ### Start Product Search
 ```
-npm run amazonproductsearch -- --arguments
+npm run amazonproductsearch -- arguments
 ```
 
 Following  Arguments are supported
 ```
---remote // To run on Browserstack
---parallel // To run tests in parallel
+remote // To run on Browserstack
+parallel // To run tests in parallel
 ```
 
 ## BrowserStack Inception
@@ -41,15 +41,14 @@ Following  Arguments are supported
 ### Start Automation
 
 ```
-npm run browserstackinception -- --arguments
+npm run browserstackinception -- arguments
 ```
 Following  Arguments are supported
 ```
---remote // To run on Browserstack
---parallel // To run tests in parallel
---os=<data-test-ositem> // from BStack Website
---device=<data-rbd-draggable-id> // from BStack Website
+remote // To run on Browserstack
+parallel // To run tests in parallel
 ```
+
 ## Percy
 
 ### Start Percy
