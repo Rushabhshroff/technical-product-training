@@ -9,9 +9,9 @@ module.exports = {
             "project": "Technical Product Training",
             "build": "Amazon Product Search",
             "name": "Amazon Product Search Chrome",
-            "debug": true,
-            "console": true,
-            "networkLogs": true
+            "browserstack.debug": true,
+            "browserstack.console": true,
+            "browserstack.networkLogs": true
         },
         {
             "browser": "firefox",
@@ -22,9 +22,9 @@ module.exports = {
             "project": "Technical Product Training",
             "build": "Amazon Product Search",
             "name": "Amazon Product Search Firefox",
-            "debug": true,
-            "console": true,
-            "networkLogs": true
+            "browserstack.debug": true,
+            "browserstack.console": true,
+            "browserstack.networkLogs": true
         },
         {
             "browser": "safari",
@@ -35,9 +35,9 @@ module.exports = {
             "project": "Technical Product Training",
             "build": "Amazon Product Search",
             "name": "Amazon Product Search Safari",
-            "debug": true,
-            "console": true,
-            "networkLogs": true
+            "browserstack.debug": true,
+            "browserstack.console": true,
+            "browserstack.networkLogs": true
         }
     ],
     "browserstack-inception": [
@@ -51,10 +51,10 @@ module.exports = {
             "build": "BrowserStack Inception",
             "name": "BrowserStack Inception Chrome",
             "resolution": "1920x1080",
-            "maskCommands": "setValues, getValues, setCookies, getCookies",
-            "debug": true,
-            "console": true,
-            "networkLogs": true
+            "browserstack.maskCommands": "setValues, getValues, setCookies, getCookies",
+            "browserstack.debug": true,
+            "browserstack.console": true,
+            "browserstack.networkLogs": true
         },
         {
             "browser": "firefox",
@@ -67,9 +67,9 @@ module.exports = {
             "name": "BrowserStack Inception Firefox",
             "resolution": "1920x1080",
             "maskCommands": "setValues, getValues, setCookies, getCookies",
-            "debug": true,
-            "console": true,
-            "networkLogs": true
+            "browserstack.debug": true,
+            "browserstack.console": true,
+            "browserstack.networkLogs": true
         },
         {
             "browser": "IE",
@@ -81,10 +81,10 @@ module.exports = {
             "build": "BrowserStack Inception",
             "name": "BrowserStack Inception Internet Explorer",
             "resolution": "1920x1080",
-            "maskCommands": "setValues, getValues, setCookies, getCookies",
-            "debug": true,
-            "console": true,
-            "networkLogs": true
+            "browserstack.maskCommands": "setValues, getValues, setCookies, getCookies",
+            "browserstack.debug": true,
+            "browserstack.console": true,
+            "browserstack.networkLogs": true
         }
     ]
 }
