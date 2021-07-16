@@ -10,7 +10,7 @@ module.exports = {
             "build": "Amazon Product Search",
             "name": "Amazon Product Search Chrome",
             "browserstack.debug": true,
-            "browserstack.console": true,
+            "browserstack.console": 'errors',
             "browserstack.networkLogs": true
         },
         {
@@ -23,7 +23,7 @@ module.exports = {
             "build": "Amazon Product Search",
             "name": "Amazon Product Search Firefox",
             "browserstack.debug": true,
-            "browserstack.console": true,
+            "browserstack.console": 'errors',
             "browserstack.networkLogs": true
         },
         {
@@ -36,7 +36,7 @@ module.exports = {
             "build": "Amazon Product Search",
             "name": "Amazon Product Search Safari",
             "browserstack.debug": true,
-            "browserstack.console": true,
+            "browserstack.console": 'errors',
             "browserstack.networkLogs": true
         }
     ],
@@ -53,7 +53,7 @@ module.exports = {
             "resolution": "1920x1080",
             "browserstack.maskCommands": "setValues, getValues, setCookies, getCookies",
             "browserstack.debug": true,
-            "browserstack.console": true,
+            "browserstack.console": 'errors',
             "browserstack.networkLogs": true
         },
         {
@@ -68,7 +68,7 @@ module.exports = {
             "resolution": "1920x1080",
             "maskCommands": "setValues, getValues, setCookies, getCookies",
             "browserstack.debug": true,
-            "browserstack.console": true,
+            "browserstack.console": 'errors',
             "browserstack.networkLogs": true
         },
         {
@@ -83,7 +83,7 @@ module.exports = {
             "resolution": "1920x1080",
             "browserstack.maskCommands": "setValues, getValues, setCookies, getCookies",
             "browserstack.debug": true,
-            "browserstack.console": true,
+            "browserstack.console": 'errors',
             "browserstack.networkLogs": true
         }
     ]

@@ -2,7 +2,7 @@ require('dotenv').config()
 const { it } = require("mocha");
 const { Builder } = require("selenium-webdriver");
 const percySnapshot = require('@percy/selenium-webdriver');
-const baseUrl = process.env.PERCY_BRANCH == "master" ? "https://www.browserstack.com" : " https://k8s.bsstag.com"
+const baseUrl = process.env.PERCY_BRANCH == "master" ? "https://www.browserstack.com" : "https://k8s.bsstag.com"
 const endPoints = {
     "Home Page": "/",
     "Pricing": "/pricing",

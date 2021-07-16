@@ -1,6 +1,6 @@
 require('dotenv').config()
+global.fetch = require('node-fetch');
 const { it } = require("mocha");
-const parallel = require("mocha.parallel");
 const BrowserStackInception = require("../BrowserStackInception");
 const caps = require('../capabilities.js');
 let args = process.argv.slice(2, process.argv.length);
@@ -12,7 +12,7 @@ for (let arg of args) {
     }
 }
 const remoteUrl = `https://${process.env.SERVER_USER}:${process.env.SERVER_ACCESS_TOKEN}@hub-cloud.browserstack.com/wd/hub`
-const runner = args.includes('parallel') ? parallel : describe;
+const runner = describe;
 runner("Browserstack Inception", async function () {
     let remoteSession = args.includes('remote');
     let capabilities = caps['browserstack-inception'];
