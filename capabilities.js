@@ -72,8 +72,8 @@ module.exports = {
             "browserstack.networkLogs": true
         },
         {
-            "browser": "IE",
-            "browserName": "IE",
+            "browser": "Edge",
+            "browserName": "Edge",
             "browser_version": "latest",
             "os": "Windows",
             "os_version": "10",
