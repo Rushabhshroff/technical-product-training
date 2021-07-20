@@ -46,7 +46,6 @@ npm run browserstackinception -- arguments
 Following  Arguments are supported
 ```
 remote // To run on Browserstack
-parallel // To run tests in parallel
 ```
 
 ## Percy
